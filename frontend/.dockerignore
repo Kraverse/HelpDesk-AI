@@ -1,0 +1,19 @@
+# Host-installed dependencies must not override the image's clean npm ci install.
+node_modules
+**/node_modules
+
+# Framework/build output and test artifacts.
+.next
+**/.next
+out
+coverage
+.turbo
+
+# Keep real local settings out of the image context, but retain the safe template.
+.env
+.env.*
+!.env.example
+
+# Generated TypeScript support files.
+next-env.d.ts
+*.tsbuildinfo
