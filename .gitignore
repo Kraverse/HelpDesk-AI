@@ -1,0 +1,26 @@
+# Environment secrets and local overrides
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+frontend/out/
+frontend/coverage/
+frontend/.turbo/
+
+# Build and editor files
+build/
+dist/
+.DS_Store
+.idea/
+.vscode/
